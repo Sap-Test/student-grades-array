@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        th{
+            background-color: purple;
+            color: lightblue;
+        }
+
+        table,td{
+
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+    </style>
+
+
+
+
+</head>
+<body style="margin-left: 50px">
+
+    <h1>Student Grade Book</h1>
+    <br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" name = "first" id="firstName">
+        <br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name = "last" id="lastName">
+        <br>
+
+        <label for="pointsEarned">Points Earned:</label>
+        <input type="number" name = "earned" id="pointsEarned" min="0" max="100">
+        <br>
+
+        <label for="pointsPossible">Points Possible:</label>
+        <input type="number" name = "possible" id="pointsPossible" min="0" max="100">
+        <br>
+
+        <button id = "submit">  Submit</button>
+        <br><br>
+
+        <button id = "sortName">  Sort By Name </button>
+
+
+        <button id = "sortPercent">  Sort By Percent </button>
+
+<br><br>
+
+        <table>
+            <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last Name</th>
+                <th>Points Earned</th>
+                <th>Points Possible</th>
+                <th>Percent</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- add one row per menu item -->
+            </tbody>
+        </table>
+
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="studentgrades.js"></script>
+</body>
+</html>
